@@ -1,0 +1,35 @@
+#carousel{
+    height: 80vh;
+}
+
+#carousel-text{
+    bottom: 30rem;
+}
+
+#carouselExampleControls{
+    height: 80vh;
+}
+nav ul li a{
+   display: block;
+}
+
+nav ul ul {
+    background-color:rgba(85, 82, 82, 0.652);
+    z-index: 999;
+    position: absolute;
+    width: 100px;
+    text-align: start;
+    top: 20px;
+    display: none;
+    
+}
+
+nav ul li:hover > ul{
+    display: block;
+   
+}
+
+.cards img{
+    width: 50rem;
+
+}

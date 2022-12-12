@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+
+
+  <!-- TOP NAVBAR -->
+   <div class="flex justify-between mx-4  h-28 text-center items-center">
+    <nav class="flex justify-between">
+      <div class="logo">
+        <h1 class="text-3xl font-bold text-pink-600">SHOPPY<span class="text-gray-700">KART</span></h1>
+      </div>
+      
+        <ul class="mx-10 justify-center mt-2 font-bold  relative hidden lg:flex" id="dropList">
+          <li class="mx-3">
+            <a href="#home" >HOME</a>
+          </li>
+          <li class="mx-3">
+            <a href="#">ABOUT</a>
+          </li>
+
+           <li class="mx-3 list">
+           <a href="#">PRODUCTS <i class="fa-sharp fa-solid fa-caret-down ml-2"></i></a>
+           <!-- <ul class="">
+            <li class="my-2"><a href="#">product1</a></li>
+            <li class="my-2"><a href="#">product2</a></li>
+            <li class="my-2"><a href="#">product3</a></li>
+           </ul> -->
+           </li>
+
+          <li class="mx-3">
+            <a href="#">PAGES <i class="fa-sharp fa-solid fa-caret-down ml-2"></i></a>
+            <!-- <ul>
+              <li class="my-2"><a href="#">PAGE1</a></li>
+              <li class="my-2"><a href="#">PAGE2</a></li>
+              <li class="my-2"><a href="#">PAGE3</a></li>
+             </ul> -->
+          </li>
+          <li class="mx-3">
+            <a href="#contact">CONTACT</a>
+          </li>
+          <li class="mx-3 text-xl">
+            <i class="bi bi-search"></i>
+          </li>
+
+        </ul>
+    </nav>
+    <!-- LOGIN AND CART -->
+   <div class="buttons font-bold hidden lg:inline-block">
+    <button class="bg-rose-600 text-white text-lg  px-3 py-2 rounded ml-3 ">
+      <a href="login.html"><i class="bi bi-person-fill mr-1"></i>Login</a>
+    </button>
+
+    <button class="bg-rose-600 text-white text-lg px-3 py-2 rounded ml-3 hidden xl:inline-block">
+      <i class="bi bi-bag-fill mr-2"></i>
+      Cart
+    </button>
+
+    <button class="text-2xl ml-3 font-bold hidden xl:inline-block">
+      <i class="bi bi-moon"></i>
+    </button>
+  </div>
+  <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+    <span class="fas fa-bars"></span>
+   </div>
+   <!-- TOP NAVBAR ENDS HERE -->
+
+   <!-- CAROUSEL -->
+   <div id="carouselExampleControls" class="carousel slide relative" data-bs-ride="carousel">
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="pics/1.jpg"
+          class="block w-full object-center"
+          alt="Wild Landscape"
+          id="carousel"
+        />
+        <div class="text-center relative font-bold px-" id="carousel-text">
+         <h3 class="text-rose-500 text-3xl mb-3 ">Up To 60% Off Now</h3>
+          <h1 class=" text-5xl sm:text-6xl px-1 text-white">Mid Season Sale 40%</h1><br>
+          <h3 class="text-white text-2xl px-2">Final Clearance: Take 20% Off'Sale Must-haves'</h3>
+          <button class="text-lg sm:text-xl my-4 sm:my-5 font-normal w-48 sm:w-56 h-16 rounded bg-rose-600 text-white">Start Shopping <i class="fa-regular fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="pics/women.jpg"
+          class="block w-full object-center"
+          alt="Camera"
+          id="carousel"
+        />
+        <div class="text-center relative font-bold px-" id="carousel-text">
+          <h3 class="text-rose-500 text-3xl mb-3 ">Up To 60% Off Now</h3>
+           <h1 class=" text-5xl sm:text-6xl px-1 text-white">Mid Season Sale 40%</h1><br>
+           <h3 class="text-white text-2xl px-2">Final Clearance: Take 20% Off'Sale Must-haves'</h3>
+          <button class="text-lg sm:text-xl my-4 sm:my-5 font-normal w-48 sm:w-56 h-16 rounded bg-rose-600 text-white">Start Shopping <i class="fa-regular fa-arrow-right"></i></button>
+         </div>
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="pics/9.jpg"
+          class="block w-full object-center"
+          alt="Exotic Fruits"
+          id="carousel"
+        />
+        <div class="text-center relative font-bold px-" id="carousel-text">
+          <h3 class="text-rose-500 text-3xl mb-3 ">Up To 60% Off Now</h3>
+           <h1 class="text-5xl sm:text-6xl px-1 text-white">Mid Season Sale 40%</h1><br>
+           <h3 class="text-white text-2xl px-2">Final Clearance: Take 20% Off'Sale Must-haves'</h3>
+          <button class="text-lg sm:text-xl my-4 sm:my-5 font-normal w-48 sm:w-56 h-16 rounded bg-rose-600 text-white">Start Shopping <i class="fa-regular fa-arrow-right"></i></button>
+         </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- CAROUSEL ENDS HERE -->
+
+<div class="shipping bg-gray-100 text-3xl h-24 text-center pt-4 font-bold">
+  <p class="text-xl sm:text-3xl">Free Shipping For You Till Midnight  <i class="fa-solid fa-truck-fast ml-3"></i></p>
+</div>
+
+<!-- middle cards -->
+<div class="flex justify-center p-10 flex-col flex-md-row">
+  <div class="md:mr-3 sm:mb-3 mt-3 h-80 cards">
+      <img src="pics/women.jpg" alt="" class="h-80 rounded">
+    <div class="relative bottom-64 ml-9">
+      <h1 class="text-3xl sm:text-4xl text-white font-bold">Platform Velvet <br> Sandals</h1>
+      <button class="bg-transparent w-28 sm:w-40 h-14 my-4 text-lg sm:text-xl text-white font-bold  border-2 rounded-md">Shop Now</button>
+    </div>
+  </div>
+
+  <div class="md:ml-3 sm:mt-3 mt-3 h-80 cards">
+    <img src="pics/bags.jpg" alt="" class="h-80 rounded">
+    <div class="relative bottom-64 ml-9">
+      <h1 class="text-3xl sm:text-4xl text-white font-bold">Pebbled Weekend <br> Bag</h1>
+      <button class="bg-transparent w-28 sm:w-40 h-14 my-4 text-lg sm:text-xl text-white font-bold  border-2 rounded-md">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- DEALS OF THE DAY -->
+<div class=" bg-gray-100 h-auto px-10 py-20">
+  <h1 class="text-3xl sm:text-5xl font-bold text-center">Deals Of The Day</h1>
+
+  <!-- cards -->
+  <div class="xl:flex gap-x-2 gap-y-5 lg:grid-cols-3 sm:grid sm:grid-cols-1 md:grid-cols-2 justify-center mt-10 mx-auto">
+    <div class="card mt-5 bg-transparent border-none w-xl-60 w-full">
+      <img src="pics/formal.jpg" alt="" class="w-xl-64 h-72 rounded-md mb-3">
+      <h1 class="text-xl text-center font-bold pr-5">Min. 40% Off on Formal wear</h1>
+    </div>
+    <div class="card mt-5 bg-transparent border-none w-xl-60 w-full">
+      <img src="pics/active-wear.jpg" alt="" class="w-xl-64 h-72 rounded-md mb-3">
+      <h1 class="text-xl text-center font-bold pr-5">Min. 60% Off on active wear</h1>
+    </div>
+    <div class="card mt-5 bg-transparent border-none w-xl-60 w-full">
+      <img src="pics/shoes.jpg" alt="" class="w-xl-64 h-72 rounded-md mb-3">
+      <h1 class="text-xl text-center font-bold pr-5">Min. 40% Off on Shoes</h1>
+    </div>
+    <div class="card mt-5 bg-transparent border-none w-xl-60 w-full">
+      <img src="pics/shirt.jpg" alt="" class="w-xl-64 h-72 rounded-md mb-3">
+      <h1 class="text-xl text-center font-bold pr-5">Min. 50% Off on Shirts</h1>
+    </div>
+    <div class="card mt-5 bg-transparent border-none w-xl-60 w-full">
+      <img src="pics/clothing.jpg" alt="" class="w-xl-64 h-72 rounded-md mb-3">
+      <h1 class="text-xl text-center font-bold pr-5">Min. 50% Off on Clothing</h1>
+    </div>
+    <div class="card mt-5 bg-transparent border-none w-xl-60 w-full">
+      <img src="pics/sandals.jpg" alt="" class="w-xl-64 h-72 rounded-md mb-3">
+      <h1 class="text-xl text-center font-bold pr-5">Min. 60% Off on Sandals</h1>
+    </div>
+  </div>
+
+</div>
+
+<!-- cards ends here -->
+
+<!-- middle video -->
+<div class=" h-auto">
+  <iframe class="w-full h-96" src="https://www.youtube-nocookie.com/embed/FMrtSHAAPhM" frameborder="0" …></iframe>
+</div>
+
+
+<!-- SHOP WITH US -->
+<div class="mt-10">
+ <div class="text-center my-16">
+  <h1 class="text-3xl sm:text-5xl font-bold mb-2">Shop With Us</h1>
+  <p class="text-lg sm:text-xl font-bold">Handpicked favourites Just For You</p>
+ </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:flex justify-evenly px-10 sm:px-32 gap-x-3 gap-y-8">
+    <div class="">
+      <img src="pics/checkerd.jpg" alt="" class="h-80 w-full md:h-80 md:w-80 lg:w-72 lg:h-80 xl:w-96 xl:h-96 rounded-md">
+      <h1 class="text-lg  text-center font-bold" >Checkered Shirt</h1>
+      <p class="text-lg text-center ">$30.00 <span class="text-red-700">$99.00</span></p>
+    </div>
+    <div class="card-div">
+      <img src="pics/f-kurta.jpg" alt="" class="h-80 w-full md:h-80 md:w-80 lg:w-72 lg:h-80 xl:w-96 xl:h-96 rounded-md">
+      <h1 class="text-lg text-center font-bold" >Cotton Flared Kurta</h1>
+      <p class="text-lg text-center">$30.00 <span class="text-red-700">$99.00</span></p>
+    </div>
+    <div class="card-div" > 
+      <img src="pics/casual.jpg" alt="" class="h-80 w-full md:h-80 md:w-80 lg:w-72 lg:h-80 xl:w-96 xl:h-96 rounded-md">
+      <h1 class="text-lg text-center font-bold" >Men Casual Shirt</h1>
+      <p class="text-lg text-center">$30.00 <span class="text-red-700">$99.00</span></p>
+    </div>
+    <div class="card-div">
+      <img src="pics/s-kurta.jpg" alt="" class="h-80 w-full md:h-80 md:w-80 lg:w-72 lg:h-80 xl:w-96 xl:h-96 rounded-md">
+      <h1 class="text-lg text-center font-bold" >Blend Straight Kurta</h1>
+      <p class="text-lg text-center">$30.00 <span class="text-red-700">$99.00</span></p>
+    </div>
+  </div>
+</div>
+<!-- SHOP WITH US ENDS HERE -->
+
+<!-- WHAT CLIENT SAYS  -->
+<section class="my-5">
+  <div class="h-auto sm:h-[90vh] md:h-[80vh] xl:h-[50vh] flex flex-col xl:flex-row px-4 py-10 xl:pt-24 gap-10 justify-center " style="background: url(pics/watch.jpg); background-size:cover;">
+      <div class="text-white  text-center">
+        <span class="text-red-600 text-xl font-bold">REVIEWS</span>
+        <h1 class="text-4xl font-bold mb-4">What Client Says?</h1>
+        <p class="text-xl xl:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia voluptatem asperiores necessitatibus dolorum in ipsa.</p>
+      </div>
+
+     <div class="flex flex-col sm:flex-row gap-4">
+      <div class="mb-6 sm:mb-0">
+        <div  class="bg-white p-6 xl:p-10 rounded-md mb-4 text-lg font-bold ">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos velit, maxime explicabo laudantium alias voluptatem eaque praesentium natus veritatis et?.</p>
+        </div>
+        <div class="flex gap-6">
+          <img src="pics/casual.jpg" alt="" class="w-20 h-20 rounded-full">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-300">Johnson William</h1>
+            <h3 class="text-xl font-bold text-gray-300">Example City</h3>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div  class="bg-white p-6 xl:p-10 rounded-md mb-4 text-lg font-bold">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos velit, maxime explicabo laudantium alias voluptatem eaque praesentium natus veritatis et?.</p>
+        </div>
+        <div class="flex gap-6">
+          <img src="pics/formal.jpg" alt="" class="w-20 h-20 rounded-full">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-300">Alexander Sakura</h1>
+            <h3 class="text-xl font-bold text-gray-300">Example City</h3>
+          </div>
+        </div>
+      </div>
+     </div>
+</div>
+</section>
+
+<!-- SUBSCRIPTIONS -->
+<section class="my-20">
+  <div class="text-center px-2">
+    <i class="fa-regular fa-envelope text-rose-600 text-6xl"></i>
+    <h1 class="text-3xl sm:text-5xl font-bold my-3">Get On The List</h1>
+    <h3 class="text-xl sm:text-2xl text-gray-400 mb-3">Shop Exclusive Promos & SAVE 20% On Your First Order</h3>
+    <div class=" justify-c"> 
+      <input type="text" placeholder="Your Email Here" class="bg-gray-300 p-2  w-[20rem] md:w-[30rem] rounded-md" >
+      <button class="bg-red-600 text-white p-2 rounded-md w-22 mt-2"><a href="#">Subscribe</a></button>
+      <p class="mt-3 text-xl text-gray-400">By entering your email you are accepting our <a class="text-rose-600 cursor-pointer">Terms Of Use </a> and <a class="text-rose-600 cursor-pointer">Privacy Policy</a> </p>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------- -->
+
+<!-- FOOTER STARTS HERE -->
+<footer class="bg-black p-5">
+  <div class="my-5">
+    <h1 class="text-4xl text-gray-300 font-bold mb-5 text-center">Special Offer All Branded Sandals Are  Flat 50% Discount</h1>
+    
+    <div class="flex justify-around gap-5 flex-col lg:flex-row text-center lg:text-start">
+      <div>
+        <h1 class="text-gray-300 text-2xl lg:text-xl font-bold mb-3">Useful Links</h1>
+        <ul class="text-xl">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">News & Media</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h1 class="text-gray-300 text-2xl lg:text-xl font-bold mb-3">Information</h1>
+        <ul class="text-xl">
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Delievey Terms</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">The Shop</a></li>
+        </ul>
+      </div>
+
+      <div id="contact">
+        <h1 class="text-gray-300 text-2xl lg:text-xl font-bold mb-3">Address & Contact</h1>
+        <ul class="text-xl">
+          <li>London UK</li>
+          <li>998 UH Street ,Office 336</li>
+          <li>Harlo 61466</li>
+          <li>+(21)123 456 7890</li>
+          <li>ShoppyKart@gmail.com</li>
+        </ul>
+      </div>
+
+    <div>
+      <h1 class="text-gray-300 text-xl font-bold mb-3">Payment Methods</h1>
+       <div class="text-white text-4xl">
+        <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+        <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+        <a href="#"><i class="fa-brands fa-cc-stripe"></i></a>
+        <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a><br>
+        <a href="#"><i class="fa-brands fa-cc-jcb"></i></a>
+        <a href="#"><i class="fa-brands fa-cc-discover"></i></a>
+        <a href="#"><i class="fa-brands fa-cc-amex"></i></a>
+       </div>
+    </div>
+  </div>
+    
+  </div>
+
+  <div class="flex justify-center gap-x-5 gap-y-2 flex-col lg:flex-row text-center">
+    <p class="text-xl">&copy;2022 ShoppyKart. All rights reserved | Designed By <span class="text-white">WAQAR ABBAS</span></p>
+
+    <div class="text-white text-2xl">
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+  
+</body>
+</html>
